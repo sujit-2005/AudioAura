@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR MAIN */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    background: transparent;
+    /* IMPORTANT */
+    z-index: 10;
+}
+
+/* LEFT LINKS */
+.nav-left {
+    display: flex;
+    gap: 22px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.75);
+    transition: 0.2s;
+}
+
+.nav-left a:hover {
+    color: #000;
+}
+
+/* CENTER LOGO */
+.nav-center {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+/* RIGHT ICONS */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ICON BUTTON */
+.icon-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 10px;
+    transition: 0.2s;
+    position: relative;
+}
+
+.icon-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    opacity: 0.85;
+}
+
+.icon-btn:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.icon-btn:hover img {
+    opacity: 1;
+}
+
+/* CART BADGE */
+.cart .badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: #000;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 999px;
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: url("headphones.png.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    background-color: #cfd5e6;
+    padding-top: 80px;
+}
+
+/*.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #cfd5e6;
+}
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}*/
+
+/* cards*/
+
+.best-sellers {
+    padding: 60px 40px;
+    background: #fff;
+}
+
+/* Header */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.arrows span {
+    font-size: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* Scroll container */
+.product-scroll {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+/* Hide scrollbar (clean look) */
+.product-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.product-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Product card */
+.product-card {
+    min-width: 320px;
+    background: #f5f5f5;
+    border-radius: 16px;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Image */
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #fff;
+}
+
+/* Badge */
+.badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #b60000;
+    color: #fff;
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/* Text */
+.product-card h3 {
+    font-size: 18px;
+    margin: 18px 0 6px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.price .old {
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
